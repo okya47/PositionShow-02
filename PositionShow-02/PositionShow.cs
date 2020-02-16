@@ -188,6 +188,10 @@ namespace PositionShow_02 {
         private void WB_Map_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e) {
 
         }
+
+        private void label12_Click(object sender, EventArgs e) {
+
+        }
         //public delegate void DelegateupdateTxtbox();
 
 

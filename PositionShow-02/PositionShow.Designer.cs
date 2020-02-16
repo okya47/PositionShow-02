@@ -71,8 +71,29 @@
             this.txtGoDirection = new System.Windows.Forms.TextBox();
             this.lblSailAngle = new System.Windows.Forms.Label();
             this.txtSailAngle = new System.Windows.Forms.TextBox();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            this.trbSailBaseAngle = new System.Windows.Forms.TrackBar();
+            this.lblValueSailBaseAngle = new System.Windows.Forms.Label();
+            this.lblSailBaseAngle = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.trbBRudderAngle = new System.Windows.Forms.TrackBar();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.trbDistanceReturn = new System.Windows.Forms.TrackBar();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.trbUpWindAngle = new System.Windows.Forms.TrackBar();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.trbDownWindAngle = new System.Windows.Forms.TrackBar();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.trbSailBaseAngle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbBRudderAngle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbDistanceReturn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbUpWindAngle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbDownWindAngle)).BeginInit();
             this.SuspendLayout();
             // 
             // WB_Map
@@ -582,19 +603,219 @@
             this.txtSailAngle.Size = new System.Drawing.Size(84, 22);
             this.txtSailAngle.TabIndex = 62;
             // 
-            // trackBar1
+            // trbSailBaseAngle
             // 
-            this.trackBar1.Location = new System.Drawing.Point(13, 13);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(104, 45);
-            this.trackBar1.TabIndex = 64;
+            this.trbSailBaseAngle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.trbSailBaseAngle.Location = new System.Drawing.Point(6, 7);
+            this.trbSailBaseAngle.Maximum = 90;
+            this.trbSailBaseAngle.Name = "trbSailBaseAngle";
+            this.trbSailBaseAngle.Size = new System.Drawing.Size(95, 45);
+            this.trbSailBaseAngle.TabIndex = 64;
+            // 
+            // lblValueSailBaseAngle
+            // 
+            this.lblValueSailBaseAngle.AutoSize = true;
+            this.lblValueSailBaseAngle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lblValueSailBaseAngle.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lblValueSailBaseAngle.Location = new System.Drawing.Point(109, 13);
+            this.lblValueSailBaseAngle.Name = "lblValueSailBaseAngle";
+            this.lblValueSailBaseAngle.Size = new System.Drawing.Size(39, 13);
+            this.lblValueSailBaseAngle.TabIndex = 65;
+            this.lblValueSailBaseAngle.Text = "label1";
+            // 
+            // lblSailBaseAngle
+            // 
+            this.lblSailBaseAngle.AutoSize = true;
+            this.lblSailBaseAngle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lblSailBaseAngle.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lblSailBaseAngle.Location = new System.Drawing.Point(151, 14);
+            this.lblSailBaseAngle.Name = "lblSailBaseAngle";
+            this.lblSailBaseAngle.Size = new System.Drawing.Size(93, 13);
+            this.lblSailBaseAngle.TabIndex = 66;
+            this.lblSailBaseAngle.Text = "Sail Base Angle";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label3.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label3.Location = new System.Drawing.Point(150, 38);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 13);
+            this.label3.TabIndex = 69;
+            this.label3.Text = "BRudderAngle";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label4.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label4.Location = new System.Drawing.Point(109, 38);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(39, 13);
+            this.label4.TabIndex = 68;
+            this.label4.Text = "label4";
+            // 
+            // trbBRudderAngle
+            // 
+            this.trbBRudderAngle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.trbBRudderAngle.Location = new System.Drawing.Point(6, 36);
+            this.trbBRudderAngle.Maximum = 45;
+            this.trbBRudderAngle.Name = "trbBRudderAngle";
+            this.trbBRudderAngle.Size = new System.Drawing.Size(95, 45);
+            this.trbBRudderAngle.SmallChange = 5;
+            this.trbBRudderAngle.TabIndex = 67;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label5.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label5.Location = new System.Drawing.Point(150, 68);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(95, 13);
+            this.label5.TabIndex = 72;
+            this.label5.Text = "DistanceReturn";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label6.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label6.Location = new System.Drawing.Point(109, 68);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(39, 13);
+            this.label6.TabIndex = 71;
+            this.label6.Text = "label6";
+            // 
+            // trbDistanceReturn
+            // 
+            this.trbDistanceReturn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.trbDistanceReturn.Location = new System.Drawing.Point(6, 65);
+            this.trbDistanceReturn.Maximum = 50;
+            this.trbDistanceReturn.Name = "trbDistanceReturn";
+            this.trbDistanceReturn.Size = new System.Drawing.Size(95, 45);
+            this.trbDistanceReturn.SmallChange = 5;
+            this.trbDistanceReturn.TabIndex = 70;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label7.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label7.Location = new System.Drawing.Point(150, 97);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(78, 13);
+            this.label7.TabIndex = 75;
+            this.label7.Text = "UpWindAngle";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label8.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label8.Location = new System.Drawing.Point(109, 97);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(39, 13);
+            this.label8.TabIndex = 74;
+            this.label8.Text = "label8";
+            // 
+            // trbUpWindAngle
+            // 
+            this.trbUpWindAngle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.trbUpWindAngle.Location = new System.Drawing.Point(6, 94);
+            this.trbUpWindAngle.Maximum = 45;
+            this.trbUpWindAngle.Name = "trbUpWindAngle";
+            this.trbUpWindAngle.Size = new System.Drawing.Size(95, 45);
+            this.trbUpWindAngle.TabIndex = 73;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label9.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label9.Location = new System.Drawing.Point(150, 127);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(94, 13);
+            this.label9.TabIndex = 78;
+            this.label9.Text = "DownWindAngle";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label10.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label10.Location = new System.Drawing.Point(109, 127);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(46, 13);
+            this.label10.TabIndex = 77;
+            this.label10.Text = "label10";
+            // 
+            // trbDownWindAngle
+            // 
+            this.trbDownWindAngle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.trbDownWindAngle.Location = new System.Drawing.Point(6, 123);
+            this.trbDownWindAngle.Maximum = 45;
+            this.trbDownWindAngle.Name = "trbDownWindAngle";
+            this.trbDownWindAngle.Size = new System.Drawing.Size(95, 45);
+            this.trbDownWindAngle.TabIndex = 76;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label11.Location = new System.Drawing.Point(11, 166);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(46, 13);
+            this.label11.TabIndex = 79;
+            this.label11.Text = "label11";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label12.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label12.Location = new System.Drawing.Point(109, 168);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(46, 13);
+            this.label12.TabIndex = 80;
+            this.label12.Text = "label12";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label13.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label13.Location = new System.Drawing.Point(151, 168);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(49, 13);
+            this.label13.TabIndex = 81;
+            this.label13.Text = "Battery";
             // 
             // Map_Show
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(609, 570);
-            this.Controls.Add(this.trackBar1);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.trbDownWindAngle);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.trbUpWindAngle);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.trbDistanceReturn);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.trbBRudderAngle);
+            this.Controls.Add(this.lblSailBaseAngle);
+            this.Controls.Add(this.lblValueSailBaseAngle);
+            this.Controls.Add(this.trbSailBaseAngle);
             this.Controls.Add(this.lblSailAngle);
             this.Controls.Add(this.txtSailAngle);
             this.Controls.Add(this.lblGoDirection);
@@ -644,7 +865,11 @@
             this.Name = "Map_Show";
             this.Text = "Map_Show";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbSailBaseAngle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbBRudderAngle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbDistanceReturn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbUpWindAngle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbDownWindAngle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -699,7 +924,24 @@
         private System.Windows.Forms.TextBox txtGoDirection;
         private System.Windows.Forms.Label lblSailAngle;
         private System.Windows.Forms.TextBox txtSailAngle;
-        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar trbSailBaseAngle;
+        private System.Windows.Forms.Label lblValueSailBaseAngle;
+        private System.Windows.Forms.Label lblSailBaseAngle;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TrackBar trbBRudderAngle;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TrackBar trbDistanceReturn;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TrackBar trbUpWindAngle;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TrackBar trbDownWindAngle;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
     }
 }
 
