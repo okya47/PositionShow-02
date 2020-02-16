@@ -71,6 +71,8 @@
             this.txtGoDirection = new System.Windows.Forms.TextBox();
             this.lblSailAngle = new System.Windows.Forms.Label();
             this.txtSailAngle = new System.Windows.Forms.TextBox();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // WB_Map
@@ -580,11 +582,19 @@
             this.txtSailAngle.Size = new System.Drawing.Size(84, 22);
             this.txtSailAngle.TabIndex = 62;
             // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(13, 13);
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(104, 45);
+            this.trackBar1.TabIndex = 64;
+            // 
             // Map_Show
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(609, 570);
+            this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.lblSailAngle);
             this.Controls.Add(this.txtSailAngle);
             this.Controls.Add(this.lblGoDirection);
@@ -634,6 +644,7 @@
             this.Name = "Map_Show";
             this.Text = "Map_Show";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -688,6 +699,7 @@
         private System.Windows.Forms.TextBox txtGoDirection;
         private System.Windows.Forms.Label lblSailAngle;
         private System.Windows.Forms.TextBox txtSailAngle;
+        private System.Windows.Forms.TrackBar trackBar1;
     }
 }
 
