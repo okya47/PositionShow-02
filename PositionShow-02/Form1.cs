@@ -173,6 +173,9 @@ namespace PositionShow_02 {
                             } catch(FormatException) {
                                 Console.WriteLine("値が異常でした");
                             }
+                            catch (System.InvalidOperationException) {
+                                Console.WriteLine("シリアル通信を閉じて下さい");
+                            }
                         }
                         break;
                     default:
