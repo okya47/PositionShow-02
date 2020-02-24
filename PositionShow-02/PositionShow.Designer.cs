@@ -40,37 +40,37 @@
             this.btn_openSerial = new System.Windows.Forms.Button();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.lblWindSpeed = new System.Windows.Forms.Label();
-            this.txtWndSpeed = new System.Windows.Forms.TextBox();
+            this.tbx_WndSpeed = new System.Windows.Forms.TextBox();
             this.lblWindCrossDistance = new System.Windows.Forms.Label();
-            this.txtWindCrossDistance = new System.Windows.Forms.TextBox();
+            this.tbx_WindCrossDistance = new System.Windows.Forms.TextBox();
             this.lblPotentioVal = new System.Windows.Forms.Label();
-            this.txtPotentioVal = new System.Windows.Forms.TextBox();
+            this.tbx_PotentioVal = new System.Windows.Forms.TextBox();
             this.lblDisTarget = new System.Windows.Forms.Label();
-            this.txtDisTarget = new System.Windows.Forms.TextBox();
+            this.tbx_DisTarget = new System.Windows.Forms.TextBox();
             this.lblDisLat = new System.Windows.Forms.Label();
-            this.txtDisLat = new System.Windows.Forms.TextBox();
+            this.tbx_DisLat = new System.Windows.Forms.TextBox();
             this.lblDisLong = new System.Windows.Forms.Label();
-            this.txtDisLong = new System.Windows.Forms.TextBox();
+            this.tbx_DisLong = new System.Windows.Forms.TextBox();
             this.lblTargetDeg = new System.Windows.Forms.Label();
-            this.txtTargetDeg = new System.Windows.Forms.TextBox();
+            this.tbx_TargetDeg = new System.Windows.Forms.TextBox();
             this.lblCompassDeg = new System.Windows.Forms.Label();
-            this.txtCompassDeg = new System.Windows.Forms.TextBox();
+            this.tbx_CompassDeg = new System.Windows.Forms.TextBox();
             this.lblTempBME280 = new System.Windows.Forms.Label();
-            this.txtTempBME280 = new System.Windows.Forms.TextBox();
+            this.tbx_TempBME280 = new System.Windows.Forms.TextBox();
             this.lblHumidBME280 = new System.Windows.Forms.Label();
-            this.txtHumidBME280 = new System.Windows.Forms.TextBox();
+            this.tbx_HumidBME280 = new System.Windows.Forms.TextBox();
             this.lblPressBME280 = new System.Windows.Forms.Label();
-            this.txtPressBME280 = new System.Windows.Forms.TextBox();
+            this.tbx_PressBME280 = new System.Windows.Forms.TextBox();
             this.lbldGPSSpdMph = new System.Windows.Forms.Label();
-            this.txtdGPSSpdMph = new System.Windows.Forms.TextBox();
+            this.tbx_dGPSSpdMph = new System.Windows.Forms.TextBox();
             this.lbldGPSCourse = new System.Windows.Forms.Label();
-            this.txtdGPSCourse = new System.Windows.Forms.TextBox();
+            this.tbx_dGPSCourse = new System.Windows.Forms.TextBox();
             this.lblMachineAngle = new System.Windows.Forms.Label();
-            this.txtMachineAngle = new System.Windows.Forms.TextBox();
+            this.tbx_MachineAngle = new System.Windows.Forms.TextBox();
             this.lblGoDirection = new System.Windows.Forms.Label();
-            this.txtGoDirection = new System.Windows.Forms.TextBox();
+            this.tbx_GoDirection = new System.Windows.Forms.TextBox();
             this.lblSailAngle = new System.Windows.Forms.Label();
-            this.txtSailAngle = new System.Windows.Forms.TextBox();
+            this.tbx_SailAngle = new System.Windows.Forms.TextBox();
             this.trbSailBaseAngle = new System.Windows.Forms.TrackBar();
             this.lblValueSailBaseAngle = new System.Windows.Forms.Label();
             this.lblSailBaseAngle = new System.Windows.Forms.Label();
@@ -264,7 +264,7 @@
             // serialPort1
             // 
             this.serialPort1.BaudRate = 38400;
-            this.serialPort1.PortName = "COM3";
+            this.serialPort1.PortName = "COM4";
             this.serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.serialPort1_DataReceived);
             // 
             // lblWindSpeed
@@ -279,14 +279,14 @@
             this.lblWindSpeed.TabIndex = 18;
             this.lblWindSpeed.Text = "WindSpeed";
             // 
-            // txtWndSpeed
+            // tbx_WndSpeed
             // 
-            this.txtWndSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtWndSpeed.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtWndSpeed.Location = new System.Drawing.Point(494, 70);
-            this.txtWndSpeed.Name = "txtWndSpeed";
-            this.txtWndSpeed.Size = new System.Drawing.Size(84, 22);
-            this.txtWndSpeed.TabIndex = 17;
+            this.tbx_WndSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbx_WndSpeed.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tbx_WndSpeed.Location = new System.Drawing.Point(494, 70);
+            this.tbx_WndSpeed.Name = "tbx_WndSpeed";
+            this.tbx_WndSpeed.Size = new System.Drawing.Size(84, 22);
+            this.tbx_WndSpeed.TabIndex = 17;
             // 
             // lblWindCrossDistance
             // 
@@ -300,14 +300,14 @@
             this.lblWindCrossDistance.TabIndex = 21;
             this.lblWindCrossDistance.Text = "WindCrossDistance";
             // 
-            // txtWindCrossDistance
+            // tbx_WindCrossDistance
             // 
-            this.txtWindCrossDistance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtWindCrossDistance.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtWindCrossDistance.Location = new System.Drawing.Point(494, 94);
-            this.txtWindCrossDistance.Name = "txtWindCrossDistance";
-            this.txtWindCrossDistance.Size = new System.Drawing.Size(84, 22);
-            this.txtWindCrossDistance.TabIndex = 20;
+            this.tbx_WindCrossDistance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbx_WindCrossDistance.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tbx_WindCrossDistance.Location = new System.Drawing.Point(494, 94);
+            this.tbx_WindCrossDistance.Name = "tbx_WindCrossDistance";
+            this.tbx_WindCrossDistance.Size = new System.Drawing.Size(84, 22);
+            this.tbx_WindCrossDistance.TabIndex = 20;
             // 
             // lblPotentioVal
             // 
@@ -321,14 +321,14 @@
             this.lblPotentioVal.TabIndex = 24;
             this.lblPotentioVal.Text = "PotentioVal";
             // 
-            // txtPotentioVal
+            // tbx_PotentioVal
             // 
-            this.txtPotentioVal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPotentioVal.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtPotentioVal.Location = new System.Drawing.Point(494, 118);
-            this.txtPotentioVal.Name = "txtPotentioVal";
-            this.txtPotentioVal.Size = new System.Drawing.Size(84, 22);
-            this.txtPotentioVal.TabIndex = 23;
+            this.tbx_PotentioVal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbx_PotentioVal.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tbx_PotentioVal.Location = new System.Drawing.Point(494, 118);
+            this.tbx_PotentioVal.Name = "tbx_PotentioVal";
+            this.tbx_PotentioVal.Size = new System.Drawing.Size(84, 22);
+            this.tbx_PotentioVal.TabIndex = 23;
             // 
             // lblDisTarget
             // 
@@ -342,14 +342,14 @@
             this.lblDisTarget.TabIndex = 27;
             this.lblDisTarget.Text = "disTarget";
             // 
-            // txtDisTarget
+            // tbx_DisTarget
             // 
-            this.txtDisTarget.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDisTarget.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtDisTarget.Location = new System.Drawing.Point(494, 142);
-            this.txtDisTarget.Name = "txtDisTarget";
-            this.txtDisTarget.Size = new System.Drawing.Size(84, 22);
-            this.txtDisTarget.TabIndex = 26;
+            this.tbx_DisTarget.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbx_DisTarget.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tbx_DisTarget.Location = new System.Drawing.Point(494, 142);
+            this.tbx_DisTarget.Name = "tbx_DisTarget";
+            this.tbx_DisTarget.Size = new System.Drawing.Size(84, 22);
+            this.tbx_DisTarget.TabIndex = 26;
             // 
             // lblDisLat
             // 
@@ -363,14 +363,14 @@
             this.lblDisLat.TabIndex = 30;
             this.lblDisLat.Text = "disLat";
             // 
-            // txtDisLat
+            // tbx_DisLat
             // 
-            this.txtDisLat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDisLat.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtDisLat.Location = new System.Drawing.Point(494, 166);
-            this.txtDisLat.Name = "txtDisLat";
-            this.txtDisLat.Size = new System.Drawing.Size(84, 22);
-            this.txtDisLat.TabIndex = 29;
+            this.tbx_DisLat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbx_DisLat.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tbx_DisLat.Location = new System.Drawing.Point(494, 166);
+            this.tbx_DisLat.Name = "tbx_DisLat";
+            this.tbx_DisLat.Size = new System.Drawing.Size(84, 22);
+            this.tbx_DisLat.TabIndex = 29;
             // 
             // lblDisLong
             // 
@@ -384,14 +384,14 @@
             this.lblDisLong.TabIndex = 33;
             this.lblDisLong.Text = "disLong";
             // 
-            // txtDisLong
+            // tbx_DisLong
             // 
-            this.txtDisLong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDisLong.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtDisLong.Location = new System.Drawing.Point(494, 190);
-            this.txtDisLong.Name = "txtDisLong";
-            this.txtDisLong.Size = new System.Drawing.Size(84, 22);
-            this.txtDisLong.TabIndex = 32;
+            this.tbx_DisLong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbx_DisLong.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tbx_DisLong.Location = new System.Drawing.Point(494, 190);
+            this.tbx_DisLong.Name = "tbx_DisLong";
+            this.tbx_DisLong.Size = new System.Drawing.Size(84, 22);
+            this.tbx_DisLong.TabIndex = 32;
             // 
             // lblTargetDeg
             // 
@@ -405,14 +405,14 @@
             this.lblTargetDeg.TabIndex = 36;
             this.lblTargetDeg.Text = "targetDeg";
             // 
-            // txtTargetDeg
+            // tbx_TargetDeg
             // 
-            this.txtTargetDeg.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTargetDeg.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtTargetDeg.Location = new System.Drawing.Point(494, 214);
-            this.txtTargetDeg.Name = "txtTargetDeg";
-            this.txtTargetDeg.Size = new System.Drawing.Size(84, 22);
-            this.txtTargetDeg.TabIndex = 35;
+            this.tbx_TargetDeg.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbx_TargetDeg.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tbx_TargetDeg.Location = new System.Drawing.Point(494, 214);
+            this.tbx_TargetDeg.Name = "tbx_TargetDeg";
+            this.tbx_TargetDeg.Size = new System.Drawing.Size(84, 22);
+            this.tbx_TargetDeg.TabIndex = 35;
             // 
             // lblCompassDeg
             // 
@@ -426,14 +426,14 @@
             this.lblCompassDeg.TabIndex = 39;
             this.lblCompassDeg.Text = "compassDeg";
             // 
-            // txtCompassDeg
+            // tbx_CompassDeg
             // 
-            this.txtCompassDeg.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCompassDeg.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtCompassDeg.Location = new System.Drawing.Point(494, 238);
-            this.txtCompassDeg.Name = "txtCompassDeg";
-            this.txtCompassDeg.Size = new System.Drawing.Size(84, 22);
-            this.txtCompassDeg.TabIndex = 38;
+            this.tbx_CompassDeg.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbx_CompassDeg.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tbx_CompassDeg.Location = new System.Drawing.Point(494, 238);
+            this.tbx_CompassDeg.Name = "tbx_CompassDeg";
+            this.tbx_CompassDeg.Size = new System.Drawing.Size(84, 22);
+            this.tbx_CompassDeg.TabIndex = 38;
             // 
             // lblTempBME280
             // 
@@ -447,14 +447,14 @@
             this.lblTempBME280.TabIndex = 42;
             this.lblTempBME280.Text = "tempBME280";
             // 
-            // txtTempBME280
+            // tbx_TempBME280
             // 
-            this.txtTempBME280.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTempBME280.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtTempBME280.Location = new System.Drawing.Point(494, 262);
-            this.txtTempBME280.Name = "txtTempBME280";
-            this.txtTempBME280.Size = new System.Drawing.Size(84, 22);
-            this.txtTempBME280.TabIndex = 41;
+            this.tbx_TempBME280.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbx_TempBME280.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tbx_TempBME280.Location = new System.Drawing.Point(494, 262);
+            this.tbx_TempBME280.Name = "tbx_TempBME280";
+            this.tbx_TempBME280.Size = new System.Drawing.Size(84, 22);
+            this.tbx_TempBME280.TabIndex = 41;
             // 
             // lblHumidBME280
             // 
@@ -468,14 +468,14 @@
             this.lblHumidBME280.TabIndex = 45;
             this.lblHumidBME280.Text = "humidBME280";
             // 
-            // txtHumidBME280
+            // tbx_HumidBME280
             // 
-            this.txtHumidBME280.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtHumidBME280.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtHumidBME280.Location = new System.Drawing.Point(494, 286);
-            this.txtHumidBME280.Name = "txtHumidBME280";
-            this.txtHumidBME280.Size = new System.Drawing.Size(84, 22);
-            this.txtHumidBME280.TabIndex = 44;
+            this.tbx_HumidBME280.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbx_HumidBME280.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tbx_HumidBME280.Location = new System.Drawing.Point(494, 286);
+            this.tbx_HumidBME280.Name = "tbx_HumidBME280";
+            this.tbx_HumidBME280.Size = new System.Drawing.Size(84, 22);
+            this.tbx_HumidBME280.TabIndex = 44;
             // 
             // lblPressBME280
             // 
@@ -489,14 +489,14 @@
             this.lblPressBME280.TabIndex = 48;
             this.lblPressBME280.Text = "presBME280";
             // 
-            // txtPressBME280
+            // tbx_PressBME280
             // 
-            this.txtPressBME280.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPressBME280.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtPressBME280.Location = new System.Drawing.Point(494, 310);
-            this.txtPressBME280.Name = "txtPressBME280";
-            this.txtPressBME280.Size = new System.Drawing.Size(84, 22);
-            this.txtPressBME280.TabIndex = 47;
+            this.tbx_PressBME280.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbx_PressBME280.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tbx_PressBME280.Location = new System.Drawing.Point(494, 310);
+            this.tbx_PressBME280.Name = "tbx_PressBME280";
+            this.tbx_PressBME280.Size = new System.Drawing.Size(84, 22);
+            this.tbx_PressBME280.TabIndex = 47;
             // 
             // lbldGPSSpdMph
             // 
@@ -510,14 +510,14 @@
             this.lbldGPSSpdMph.TabIndex = 51;
             this.lbldGPSSpdMph.Text = "dGPSSpdMph";
             // 
-            // txtdGPSSpdMph
+            // tbx_dGPSSpdMph
             // 
-            this.txtdGPSSpdMph.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtdGPSSpdMph.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtdGPSSpdMph.Location = new System.Drawing.Point(494, 334);
-            this.txtdGPSSpdMph.Name = "txtdGPSSpdMph";
-            this.txtdGPSSpdMph.Size = new System.Drawing.Size(84, 22);
-            this.txtdGPSSpdMph.TabIndex = 50;
+            this.tbx_dGPSSpdMph.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbx_dGPSSpdMph.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tbx_dGPSSpdMph.Location = new System.Drawing.Point(494, 334);
+            this.tbx_dGPSSpdMph.Name = "tbx_dGPSSpdMph";
+            this.tbx_dGPSSpdMph.Size = new System.Drawing.Size(84, 22);
+            this.tbx_dGPSSpdMph.TabIndex = 50;
             // 
             // lbldGPSCourse
             // 
@@ -531,14 +531,14 @@
             this.lbldGPSCourse.TabIndex = 54;
             this.lbldGPSCourse.Text = "dGPSCourse";
             // 
-            // txtdGPSCourse
+            // tbx_dGPSCourse
             // 
-            this.txtdGPSCourse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtdGPSCourse.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtdGPSCourse.Location = new System.Drawing.Point(494, 358);
-            this.txtdGPSCourse.Name = "txtdGPSCourse";
-            this.txtdGPSCourse.Size = new System.Drawing.Size(84, 22);
-            this.txtdGPSCourse.TabIndex = 53;
+            this.tbx_dGPSCourse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbx_dGPSCourse.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tbx_dGPSCourse.Location = new System.Drawing.Point(494, 358);
+            this.tbx_dGPSCourse.Name = "tbx_dGPSCourse";
+            this.tbx_dGPSCourse.Size = new System.Drawing.Size(84, 22);
+            this.tbx_dGPSCourse.TabIndex = 53;
             // 
             // lblMachineAngle
             // 
@@ -552,14 +552,14 @@
             this.lblMachineAngle.TabIndex = 57;
             this.lblMachineAngle.Text = "machineAngle";
             // 
-            // txtMachineAngle
+            // tbx_MachineAngle
             // 
-            this.txtMachineAngle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMachineAngle.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtMachineAngle.Location = new System.Drawing.Point(494, 382);
-            this.txtMachineAngle.Name = "txtMachineAngle";
-            this.txtMachineAngle.Size = new System.Drawing.Size(84, 22);
-            this.txtMachineAngle.TabIndex = 56;
+            this.tbx_MachineAngle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbx_MachineAngle.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tbx_MachineAngle.Location = new System.Drawing.Point(494, 382);
+            this.tbx_MachineAngle.Name = "tbx_MachineAngle";
+            this.tbx_MachineAngle.Size = new System.Drawing.Size(84, 22);
+            this.tbx_MachineAngle.TabIndex = 56;
             // 
             // lblGoDirection
             // 
@@ -573,14 +573,14 @@
             this.lblGoDirection.TabIndex = 60;
             this.lblGoDirection.Text = "goDirection";
             // 
-            // txtGoDirection
+            // tbx_GoDirection
             // 
-            this.txtGoDirection.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtGoDirection.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtGoDirection.Location = new System.Drawing.Point(494, 406);
-            this.txtGoDirection.Name = "txtGoDirection";
-            this.txtGoDirection.Size = new System.Drawing.Size(84, 22);
-            this.txtGoDirection.TabIndex = 59;
+            this.tbx_GoDirection.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbx_GoDirection.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tbx_GoDirection.Location = new System.Drawing.Point(494, 406);
+            this.tbx_GoDirection.Name = "tbx_GoDirection";
+            this.tbx_GoDirection.Size = new System.Drawing.Size(84, 22);
+            this.tbx_GoDirection.TabIndex = 59;
             // 
             // lblSailAngle
             // 
@@ -594,14 +594,14 @@
             this.lblSailAngle.TabIndex = 63;
             this.lblSailAngle.Text = "SailAngle";
             // 
-            // txtSailAngle
+            // tbx_SailAngle
             // 
-            this.txtSailAngle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSailAngle.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtSailAngle.Location = new System.Drawing.Point(494, 430);
-            this.txtSailAngle.Name = "txtSailAngle";
-            this.txtSailAngle.Size = new System.Drawing.Size(84, 22);
-            this.txtSailAngle.TabIndex = 62;
+            this.tbx_SailAngle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbx_SailAngle.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tbx_SailAngle.Location = new System.Drawing.Point(494, 430);
+            this.tbx_SailAngle.Name = "tbx_SailAngle";
+            this.tbx_SailAngle.Size = new System.Drawing.Size(84, 22);
+            this.tbx_SailAngle.TabIndex = 62;
             // 
             // trbSailBaseAngle
             // 
@@ -817,37 +817,37 @@
             this.Controls.Add(this.lblValueSailBaseAngle);
             this.Controls.Add(this.trbSailBaseAngle);
             this.Controls.Add(this.lblSailAngle);
-            this.Controls.Add(this.txtSailAngle);
+            this.Controls.Add(this.tbx_SailAngle);
             this.Controls.Add(this.lblGoDirection);
-            this.Controls.Add(this.txtGoDirection);
+            this.Controls.Add(this.tbx_GoDirection);
             this.Controls.Add(this.lblMachineAngle);
-            this.Controls.Add(this.txtMachineAngle);
+            this.Controls.Add(this.tbx_MachineAngle);
             this.Controls.Add(this.lbldGPSCourse);
-            this.Controls.Add(this.txtdGPSCourse);
+            this.Controls.Add(this.tbx_dGPSCourse);
             this.Controls.Add(this.lbldGPSSpdMph);
-            this.Controls.Add(this.txtdGPSSpdMph);
+            this.Controls.Add(this.tbx_dGPSSpdMph);
             this.Controls.Add(this.lblPressBME280);
-            this.Controls.Add(this.txtPressBME280);
+            this.Controls.Add(this.tbx_PressBME280);
             this.Controls.Add(this.lblHumidBME280);
-            this.Controls.Add(this.txtHumidBME280);
+            this.Controls.Add(this.tbx_HumidBME280);
             this.Controls.Add(this.lblTempBME280);
-            this.Controls.Add(this.txtTempBME280);
+            this.Controls.Add(this.tbx_TempBME280);
             this.Controls.Add(this.lblCompassDeg);
-            this.Controls.Add(this.txtCompassDeg);
+            this.Controls.Add(this.tbx_CompassDeg);
             this.Controls.Add(this.lblTargetDeg);
-            this.Controls.Add(this.txtTargetDeg);
+            this.Controls.Add(this.tbx_TargetDeg);
             this.Controls.Add(this.lblDisLong);
-            this.Controls.Add(this.txtDisLong);
+            this.Controls.Add(this.tbx_DisLong);
             this.Controls.Add(this.lblDisLat);
-            this.Controls.Add(this.txtDisLat);
+            this.Controls.Add(this.tbx_DisLat);
             this.Controls.Add(this.lblDisTarget);
-            this.Controls.Add(this.txtDisTarget);
+            this.Controls.Add(this.tbx_DisTarget);
             this.Controls.Add(this.lblPotentioVal);
-            this.Controls.Add(this.txtPotentioVal);
+            this.Controls.Add(this.tbx_PotentioVal);
             this.Controls.Add(this.lblWindCrossDistance);
-            this.Controls.Add(this.txtWindCrossDistance);
+            this.Controls.Add(this.tbx_WindCrossDistance);
             this.Controls.Add(this.lblWindSpeed);
-            this.Controls.Add(this.txtWndSpeed);
+            this.Controls.Add(this.tbx_WndSpeed);
             this.Controls.Add(this.btn_openSerial);
             this.Controls.Add(this.btn_closeSerial);
             this.Controls.Add(this.btn_MapChange);
@@ -893,37 +893,37 @@
         private System.Windows.Forms.Button btn_openSerial;
         private System.IO.Ports.SerialPort serialPort1;
         private System.Windows.Forms.Label lblWindSpeed;
-        private System.Windows.Forms.TextBox txtWndSpeed;
+        private System.Windows.Forms.TextBox tbx_WndSpeed;
         private System.Windows.Forms.Label lblWindCrossDistance;
-        private System.Windows.Forms.TextBox txtWindCrossDistance;
+        private System.Windows.Forms.TextBox tbx_WindCrossDistance;
         private System.Windows.Forms.Label lblPotentioVal;
-        private System.Windows.Forms.TextBox txtPotentioVal;
+        private System.Windows.Forms.TextBox tbx_PotentioVal;
         private System.Windows.Forms.Label lblDisTarget;
-        private System.Windows.Forms.TextBox txtDisTarget;
+        private System.Windows.Forms.TextBox tbx_DisTarget;
         private System.Windows.Forms.Label lblDisLat;
-        private System.Windows.Forms.TextBox txtDisLat;
+        private System.Windows.Forms.TextBox tbx_DisLat;
         private System.Windows.Forms.Label lblDisLong;
-        private System.Windows.Forms.TextBox txtDisLong;
+        private System.Windows.Forms.TextBox tbx_DisLong;
         private System.Windows.Forms.Label lblTargetDeg;
-        private System.Windows.Forms.TextBox txtTargetDeg;
+        private System.Windows.Forms.TextBox tbx_TargetDeg;
         private System.Windows.Forms.Label lblCompassDeg;
-        private System.Windows.Forms.TextBox txtCompassDeg;
+        private System.Windows.Forms.TextBox tbx_CompassDeg;
         private System.Windows.Forms.Label lblTempBME280;
-        private System.Windows.Forms.TextBox txtTempBME280;
+        private System.Windows.Forms.TextBox tbx_TempBME280;
         private System.Windows.Forms.Label lblHumidBME280;
-        private System.Windows.Forms.TextBox txtHumidBME280;
+        private System.Windows.Forms.TextBox tbx_HumidBME280;
         private System.Windows.Forms.Label lblPressBME280;
-        private System.Windows.Forms.TextBox txtPressBME280;
+        private System.Windows.Forms.TextBox tbx_PressBME280;
         private System.Windows.Forms.Label lbldGPSSpdMph;
-        private System.Windows.Forms.TextBox txtdGPSSpdMph;
+        private System.Windows.Forms.TextBox tbx_dGPSSpdMph;
         private System.Windows.Forms.Label lbldGPSCourse;
-        private System.Windows.Forms.TextBox txtdGPSCourse;
+        private System.Windows.Forms.TextBox tbx_dGPSCourse;
         private System.Windows.Forms.Label lblMachineAngle;
-        private System.Windows.Forms.TextBox txtMachineAngle;
+        private System.Windows.Forms.TextBox tbx_MachineAngle;
         private System.Windows.Forms.Label lblGoDirection;
-        private System.Windows.Forms.TextBox txtGoDirection;
+        private System.Windows.Forms.TextBox tbx_GoDirection;
         private System.Windows.Forms.Label lblSailAngle;
-        private System.Windows.Forms.TextBox txtSailAngle;
+        private System.Windows.Forms.TextBox tbx_SailAngle;
         private System.Windows.Forms.TrackBar trbSailBaseAngle;
         private System.Windows.Forms.Label lblValueSailBaseAngle;
         private System.Windows.Forms.Label lblSailBaseAngle;
