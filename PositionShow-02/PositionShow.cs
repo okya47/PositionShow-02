@@ -28,6 +28,17 @@ namespace PositionShow_02 {
             gmap.MouseMove += new MouseEventHandler(onMouseMove);
             gmap.MouseDown += new MouseEventHandler(onMouseDown);
             gmap.MouseUp += new MouseEventHandler(onMouseUp);
+
+            try
+            {
+                string[] portname = SerialPort.GetPortNames();
+                serialPort1.PortName = portname[0];
+            }
+            catch (IndexOutOfRangeException)
+            {
+                Console.WriteLine("シリアルポートが見つかりません");
+                MessageBox.Show("シリアルポートが見つかりません。シリアルケーブルを接続してください", "シリアルケーブルエラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         // マウスダウンのイベント
@@ -51,6 +62,12 @@ namespace PositionShow_02 {
                 int y = e.Y - gmap.Size.Height / 2;
                 System.Diagnostics.Trace.WriteLine(String.Format("{0}, {0}", x, y));
                 dragTargetMaker.LocalPosition = new Point(x, y);
+                var point = gmap.FromLocalToLatLng(e.X, e.Y);
+                double tarLat = point.Lat;
+                double tarLng = point.Lng;
+                tbx_tarLat.Text = tarLat + "";
+                tbx_tarLng.Text = tarLng + "";
+
             }
         }
 
@@ -366,7 +383,7 @@ namespace PositionShow_02 {
             GMap.NET.PointLatLng point2 = new PointLatLng(lat, lng);
             GMapMarker marker = new GMarkerGoogle(point2, GMarkerGoogleType.blue);
 
-            if (markers.Markers.Count() > 1) {
+            if (markers.Markers.Count() > 0) {
                 markers.Markers.RemoveAt(1);
             }
             markers.Markers.Add(marker);
@@ -395,10 +412,14 @@ namespace PositionShow_02 {
             gmap.Position = new GMap.NET.PointLatLng(tarLat, tarLng);
             gmap.MinZoom = 5;
             gmap.MaxZoom = 50;
-            gmap.Zoom = 15;
+            gmap.Zoom = 12;
             // マーカーを追加
             GMap.NET.PointLatLng point1 = new PointLatLng(tarLat, tarLng);
             GMapMarker marker = new GMarkerGoogle(point1, GMarkerGoogleType.red);
+            if(markers.Markers.Count() > 0)
+            {
+                markers.Markers.RemoveAt(0);
+            }
             markers.Markers.Add(marker);
             gmap.Overlays.Add(markers);
         }
